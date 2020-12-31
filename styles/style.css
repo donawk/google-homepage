@@ -1,0 +1,32 @@
+:root {
+    --nav-image-size: 25px;
+}
+.top-navbar {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 5px;
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nav-images {
+    width: var(--nav-image-size);
+    height: var(--nav-image-size);
+}
+.footer {
+    background-color: #f2f2f2;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+}
+#location {
+    justify-content: space-evenly;
+}
