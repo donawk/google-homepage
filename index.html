@@ -3,6 +3,8 @@
     <title>Google</title>
     <meta charset="utf-8">
     <link href="styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
@@ -13,15 +15,28 @@
             <div><img class="nav-images" src="images/userdp.png" alt="User Display Picture"></div>
         </nav>
     </header>
-    <img src="images/googlelogo.png" alt="Google Logo">
-    <form action="">
-        <input type="search" name="search">
-    </form>
+    <main class="search">
+        <div>
+            <img src="images/googlelogo.png" alt="Google Logo">
+        </div>
+        <div style="width: parent;">
+            <form action="">
+                <input type="search" name="search" id="searchbar">
+            </form>
+        </div>
+        <div>
+            <button>Google Search</button>
+            <button>I'm feeling lucky</button>
+        </div>
+        <div>
+            <p>Google offered in: አማርኛ ትግርኛ Soomaali Afaan Oromoo </p>
+        </div>
+    </main>
+    <!-- Display issue: Footer constructed differently, as evident when browser is fullscreen -->
     <footer>
         <nav id="location" class="footer">
             <div>Ethiopia</div>
         </nav>
-        <hr>
         <nav class="footer">
             <div>Privacy</div>
             <div>Terms</div>
