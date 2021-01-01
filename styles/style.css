@@ -24,10 +24,10 @@ body {
 }
 .google-search {
     position: absolute;
-    width: 80vw;
+    width: 60vw;
     height: 30vh;
-    left: 10vw;
-    top: 10vh;
+    left: 20vw;
+    top: 20vh;
     /* display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -41,20 +41,22 @@ body {
     grid-template-areas: 
         ". logo logo ."
         "search search search search"
-        ". results lucky ."
+        ". results results ."
         "more more more more";
 }
-.search div {
-    background-color: gray;
-    border: 2px solid black;
-}
 #searchbar {
-    width: 80vw;
+    padding: 5px;
+    width: 50vw;
+    height: 40px;
     border-radius: 30px;
 }
 .nav-images {
     width: var(--nav-image-size);
     height: var(--nav-image-size);
+}
+.google-search div {
+    justify-self: center;
+    align-self: stretch;
 }
 .logo {
     grid-area: logo;
@@ -64,18 +66,17 @@ body {
 }
 .results {
     grid-area: results;
-}
-.lucky {
-    grid-area: lucky;
+    justify-self: stretch;
 }
 .more {
     grid-area: more;
+    font-size: small;
 }
 .footer {
     position: relative;
     width: 90vw;
-    height: 8vh;
-    padding: 2vw 5vw;
+    height: auto;
+    padding: 1vh 5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -93,7 +94,7 @@ footer div {
 }
 #location {
     width: 100vw;
-    height: 2vh;
+    height: auto;
     justify-content: flex-start;
     border: 1px solid #e0e2e5;
 }
