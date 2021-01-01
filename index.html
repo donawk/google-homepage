@@ -12,24 +12,29 @@
         <nav class="top-navbar">
             <div>Gmail</div>
             <div>Images</div>
-            <div><img class="nav-images" src="images/googlemenu.png" 
-                alt="Google Menu"></div>
-            <div><img class="nav-images" src="images/userdp.png" 
-                alt="User Display Picture"></div>
+            <div>
+                <img class="nav-images" src="images/google-menu.png"
+                alt="Google Menu" id="menu-icon" onmouseover="hoverOn(this)"
+                onmouseout="hoverOff(this)">
+            </div>
+            <div>
+                <img class="nav-images" src="images/user-display-photo.png" 
+                alt="User Display Picture">
+            </div>
         </nav>
     </header>
     <main class="google-search">
         <div class="logo">
-            <img src="images/googlelogo.png" alt="Google Logo">
+            <img src="images/google-logo.png" alt="Google Logo">
         </div>
         <div class="search">
             <form action="">
-                <input type="search" name="search" id="searchbar">
+                <input type="search" name="search" id="searchbar" tabindex="0">
             </form>
         </div>
         <div class="results">
-            <button>Google Search</button>
-            <button>I'm feeling lucky</button>
+            <button tabindex="0">Google Search</button>
+            <button tabindex="0">I'm feeling lucky</button>
         </div>
         <div class="more">
             <p>Google offered in: &emsp;&emsp;&emsp;<a href="#">አማርኛ</a>
@@ -38,6 +43,8 @@
                 <a href="#">Afaan Oromoo</a></p>
         </div>
     </main>
+    <!-- Fixed; Display issue: Footer constructed differently, as evident when browser 
+        is fullscreen -->
     <footer>
         <nav id="location" class="footer">
             <div>Ethiopia</div>
@@ -59,5 +66,5 @@
                 About&emsp;&emsp;&emsp;How Search Works</div>
         </nav>
     </footer>
-    
+    <script src="scripts/main.js"></script>
 </body>
