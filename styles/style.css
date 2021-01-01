@@ -5,6 +5,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    font-weight: 25;
+    color: #555;
 }
 .top-navbar {
     position: absolute;
@@ -20,27 +22,54 @@ body {
 .top-navbar div {
     margin: 0 10px;
 }
-.search {
+.google-search {
     position: absolute;
     width: 80vw;
+    height: 30vh;
     left: 10vw;
-    top: 25vh;
-    display: flex;
+    top: 10vh;
+    /* display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: flex-start;
+    align-items: flex-start; */
+    display: grid;
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 5px;
+    justify-items: stretch;
     align-items: center;
+    grid-template-areas: 
+        ". logo logo ."
+        "search search search search"
+        ". results lucky ."
+        "more more more more";
 }
 .search div {
-    width: 80vw;
+    background-color: gray;
+    border: 2px solid black;
 }
 #searchbar {
-    padding: 20px;
     width: 80vw;
     border-radius: 30px;
 }
 .nav-images {
     width: var(--nav-image-size);
     height: var(--nav-image-size);
+}
+.logo {
+    grid-area: logo;
+}
+.search {
+    grid-area: search;
+}
+.results {
+    grid-area: results;
+}
+.lucky {
+    grid-area: lucky;
+}
+.more {
+    grid-area: more;
 }
 .footer {
     position: relative;
