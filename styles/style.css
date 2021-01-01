@@ -35,7 +35,7 @@ body {
     display: grid;
     grid-template-columns: 15% 35% 35% 15%;
     grid-template-rows: auto auto auto auto;
-    grid-gap: 5px;
+    grid-gap: 20px;
     justify-items: stretch;
     align-items: center;
     grid-template-areas: 
@@ -43,6 +43,9 @@ body {
         "search search search search"
         ". results results ."
         "more more more more";
+}
+.spaced-text {
+    tab-size: 20;
 }
 #searchbar {
     padding: 5px;
@@ -73,10 +76,8 @@ body {
     font-size: small;
 }
 .footer {
-    position: relative;
-    width: 90vw;
     height: auto;
-    padding: 1vh 5vw;
+    padding: 1vh 1vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -84,17 +85,30 @@ body {
     flex-wrap: wrap;
 }
 footer {
-    width: 100%;
+    width: 100vw;
     background-color: #f2f2f2;
     position: fixed;
     bottom: 0;
 }
-footer div {
-    padding: 0 2vw;
-}
 #location {
     width: 100vw;
     height: auto;
+    padding-left: 20px;
     justify-content: flex-start;
     border: 1px solid #e0e2e5;
+}
+.right {
+    float: right;
+    width: 300px;
+}
+.left {
+    float: left;
+    width: 500px;
+}
+@media (max-width: 820px) {
+    .right, left {
+        float: none;
+        width: 100vw;
+        margin: 5px;
+    }
 }
