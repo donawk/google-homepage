@@ -7,6 +7,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9em;
     color: #888;
+    tab-size: 160;
+    -moz-tab-size: 160;
 }
 .top-navbar {
     display: flex;
@@ -49,15 +51,14 @@ body {
     tab-size: 20;
 }
 #searchbar {
-    padding: 5px;
-    width: 500px;
-    height: 40px;
+    width: 600px;
+    height: 45px;
     border-radius: 50px;
-    padding-left: 50px;
-    background-image: url("../images/search-icon.png");
-    background-size: 20px;
+    padding-left: 45px;
+    background-image: url("../images/search-icon-a.png");
+    background-size: 15px;
     background-repeat: no-repeat;
-    background-position: 10px center;
+    background-position: 15px center;
 }
 .nav-images {
     width: var(--nav-image-size);
@@ -66,6 +67,17 @@ body {
 .google-search div {
     justify-self: center;
     align-self: stretch;
+}
+.google-button {
+    height: 35px;
+    width: 150px;
+    background-color: #fafafc;
+    border-width: 0;
+    border-radius: 5px;
+    border: 0px solid black
+}
+.google-button:hover {
+    border: 1px solid #eee;
 }
 .logo {
     grid-area: logo;
@@ -105,6 +117,7 @@ footer {
 }
 .right {
     float: right;
+    padding-right: 0px;
     width: 300px;
 }
 .left {

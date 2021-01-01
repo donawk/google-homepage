@@ -3,7 +3,7 @@
     <title>Google</title>
     <meta charset="utf-8">
     <link href="styles/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" 
     rel="stylesheet"> 
 </head>
@@ -14,11 +14,12 @@
             <div>Images</div>
             <div>
                 <img class="nav-images" src="images/google-menu.png"
-                alt="Google Menu" id="menu-icon" onmouseover="hoverOn(this)"
-                onmouseout="hoverOff(this)">
+                alt="Google Menu" id="menu-icon" 
+                onmouseover="hoverOnUserDP(this)" 
+                onmouseout="hoverOffUserDP(this)">
             </div>
             <div>
-                <img class="nav-images" src="images/user-display-photo.png" 
+                <img class="nav-images" src="images/user-display-photo-a.png" 
                 alt="User Display Picture">
             </div>
         </nav>
@@ -33,14 +34,21 @@
             </form>
         </div>
         <div class="results">
-            <button tabindex="0">Google Search</button>
-            <button tabindex="0">I'm feeling lucky</button>
+            <button tabindex="0" class="google-button"
+            onmouseover="hoverOnSearchBttn(this)"
+            onmouseout="hoverOffSearchBttn(this)">Google Search</button>
+            <button tabindex="0" class="google-button"
+            onmouseover="hoverOnSearchBttn(this)"
+            onmouseout="hoverOffSearchBttn(this)">I'm Feeling Lucky</button>
         </div>
         <div class="more">
-            <p>Google offered in: &emsp;&emsp;&emsp;<a href="#">አማርኛ</a>
-                &emsp;&emsp;&emsp;<a href="#">ትግርኛ</a>&emsp;&emsp;&emsp;
-                <a href="#">Soomaali</a>&emsp;&emsp;&emsp;
-                <a href="#">Afaan Oromoo</a></p>
+            <p>
+                Google offered in: 
+                &emsp;&emsp;&emsp;&emsp;<a href="#">አማርኛ</a>
+                &emsp;&emsp;&emsp;&emsp;<a href="#">ትግርኛ</a>
+                &emsp;&emsp;&emsp;&emsp;<a href="#">Soomaali</a>
+                &emsp;&emsp;&emsp;&emsp;<a href="#">Afaan Oromoo</a>
+            </p>
         </div>
     </main>
     <!-- Fixed; Display issue: Footer constructed differently, as evident when browser 
