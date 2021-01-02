@@ -6,6 +6,7 @@
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" 
     rel="stylesheet"> 
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -13,13 +14,13 @@
             <a href="#">Gmail</a>
             <a href="#">Images</a>
             <div>
-                <img class="nav-images" src="images/google-menu.png"
+                <img src="images/menu-small.png"
                 alt="Google Menu" id="menu-icon" 
                 onmouseover="hoverOnUserDP(this)" 
                 onmouseout="hoverOffUserDP(this)">
             </div>
             <div>
-                <img class="nav-images" src="images/user-display-photo-a.png" 
+                <img id="user-icon" src="images/user-display-photo-a.png" 
                 alt="User Display Picture">
             </div>
         </nav>
@@ -34,12 +35,12 @@
             </form>
         </div>
         <div class="results spaced-items">
-            <button tabindex="0" class="google-button"
-            onmouseover="hoverOnSearchBttn(this)"
-            onmouseout="hoverOffSearchBttn(this)">Google Search</button>
-            <button tabindex="0" class="google-button"
-            onmouseover="hoverOnSearchBttn(this)"
-            onmouseout="hoverOffSearchBttn(this)">I'm Feeling Lucky</button>
+            <input type="submit" tabindex="0" class="google-button"
+            name="search" onmouseover="hoverOnSearchBttn(this)"
+            value="Google Search" onmouseout="hoverOffSearchBttn(this)">
+            <input type="submit" tabindex="0" class="google-button"
+            name="search" onmouseover="hoverOnSearchBttn(this)"
+            value="I'm Feeling Lucky" onmouseout="hoverOffSearchBttn(this)">
         </div>
          
         <div class="more spaced-items more-link">
@@ -50,8 +51,8 @@
             <a href="#">Afaan Oromoo</a>
         </div>
     </main>
-    <!-- Fixed; Display issue: Footer constructed differently, as evident when browser 
-        is fullscreen -->
+    <!-- Fixed; Display issue: Footer constructed differently, 
+        as evident when browser is fullscreen -->
     <footer>
         <nav id="location">
             <div>Ethiopia</div>

@@ -1,8 +1,8 @@
 function hoverOnUserDP(img) {
-    img.setAttribute("src", "images/google-menu-hover.png")
+    img.setAttribute("src", "images/menu-small-hover.png")
 }
 function hoverOffUserDP(img) {
-    img.setAttribute("src", "images/google-menu.png")
+    img.setAttribute("src", "images/menu-small.png")
     
 }
 // function hoverOnSearchBttn(bttn) {
