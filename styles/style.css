@@ -13,7 +13,7 @@ body {
 .spaced-items {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
     padding: 1vmax;
@@ -45,7 +45,7 @@ a:hover {
     position: absolute;
     width: 60vw;
     height: 30vh;
-    left: 20vw;
+    left: 15vw;
     top: 20vh;
     /* display: flex;
     flex-direction: column;
@@ -70,11 +70,21 @@ a:hover {
     width: 600px;
     height: 45px;
     border-radius: 50px;
+    border: 2px solid #eee;
+    font-size: 17px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
     padding-left: 45px;
     background-image: url("../images/search-icon-a.png");
     background-size: 15px;
     background-repeat: no-repeat;
     background-position: 15px center;
+}
+#searchbar:hover {
+    box-shadow: 0px 0px 7px 1px #eee;
+}
+#searchbar:focus-within {
+    outline: none;
 }
 .nav-images {
     width: var(--nav-image-size);
@@ -128,17 +138,20 @@ footer {
 }
 .right {
     float: right;
-    width: 300px;
+    width: 250px;
 }
 .left {
     float: left;
-    width: 500px;
+    width: 400px;
 }
-@media (max-width: 900px) {
+@media (max-width: 750px) {
     .right, left {
         float: none;
         width: 290px;
-        margin: 5px;
+        margin: 2px;
+    }
+    .right {
+        margin-left: 75px;
     }
 }
 @media (max-width: 900px) {
