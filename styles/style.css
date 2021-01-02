@@ -4,6 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9em;
     color: #888;
+    text-underline-offset: 2px;
     /* tab-size: 160;
     -moz-tab-size: 160; */
 }
@@ -13,7 +14,7 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 1vmax;
+    padding: 10px;
 }
 .top-navbar {
     position: absolute;
@@ -22,9 +23,10 @@ body {
     padding: 10px;
     margin: 10px;
     width: 220px;
+    height: 22px;
 }
-.top-navbar div {
-    margin: 0 10px;
+.top-navbar a {
+    align-self: flex-start;
 }
 #menu-icon {
     width: 15px;
@@ -106,6 +108,7 @@ a:hover {
 }
 .google-button:hover {
     border: 1px solid #eee;
+    box-shadow: 0px 0px 5px 1px #eee;
 }
 .logo {
     grid-area: logo;
@@ -128,11 +131,13 @@ footer {
     background-color: #f2f2f2;
     position: fixed;
     bottom: 0;
+    display: flex;
+    flex-direction: column;
 }
 #location {
     width: 100vw;
     height: auto;
-    padding: 1vmin;
+    padding: 10px;
     padding-left: 25px;
     position: left;
     border: 1px solid #e0e2e5;
@@ -150,11 +155,14 @@ footer {
 @media (max-width: 750px) {
     .right, left {
         float: none;
-        width: 290px;
+        width: 250px;
         margin: 2px;
     }
     .right {
         margin-left: 75px;
+    }
+    footer {
+        align-items: center;
     }
 }
 @media (max-width: 900px) {
