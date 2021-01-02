@@ -25,21 +25,22 @@
             </div>
         </nav>
     </header>
-    <main class="google-search">
+    <form action="" class="google-search">
         <div class="logo">
             <img src="images/google-logo.png" alt="Google Logo">
         </div>
         <div class="search">
-            <form action="">
-                <input type="search" name="search" id="searchbar" tabindex="0">
-            </form>
+            <label for="search">
+                <input type="search" name="search" 
+                id="searchbar" tabindex="0">
+            </label>
         </div>
         <div class="results spaced-items">
             <input type="submit" tabindex="0" class="google-button"
             name="search" onmouseover="hoverOnSearchBttn(this)"
             value="Google Search" onmouseout="hoverOffSearchBttn(this)">
             <input type="submit" tabindex="0" class="google-button"
-            name="search" onmouseover="hoverOnSearchBttn(this)"
+            name="searchbar" onmouseover="hoverOnSearchBttn(this)"
             value="I'm Feeling Lucky" onmouseout="hoverOffSearchBttn(this)">
         </div>
          
@@ -50,7 +51,7 @@
             <a href="#">Soomaali</a>
             <a href="#">Afaan Oromoo</a>
         </div>
-    </main>
+    </form>
     <!-- Fixed; Display issue: Footer constructed differently, 
         as evident when browser is fullscreen -->
     <footer>
