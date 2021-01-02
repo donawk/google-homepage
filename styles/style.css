@@ -7,23 +7,39 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9em;
     color: #888;
-    tab-size: 160;
-    -moz-tab-size: 160;
+    /* tab-size: 160;
+    -moz-tab-size: 160; */
 }
-.top-navbar {
+.spaced-items {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: nowrap;
+    padding: 1vmax;
+}
+.top-navbar {
     position: absolute;
     top: 0px;
     right: 0px;
     padding: 10px;
     margin: 10px;
-    width: 200px;
+    width: 220px;
 }
 .top-navbar div {
     margin: 0 10px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.nav-link a, .nav-link a:visited {
+    color: gray;
+}
+.more-link a, .more-link a:visited {
+    color: blue;
 }
 .google-search {
     position: absolute;
@@ -88,19 +104,12 @@ body {
 .results {
     grid-area: results;
     justify-self: stretch;
+    width: 400px;
 }
 .more {
     grid-area: more;
     font-size: small;
-}
-.footer {
-    height: auto;
-    padding: 1vh 1vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    width: 400px;
 }
 footer {
     width: 100vw;
@@ -111,28 +120,29 @@ footer {
 #location {
     width: 100vw;
     height: auto;
-    padding-left: 13px;
+    padding: 1vmin;
     position: left;
     border: 1px solid #e0e2e5;
+    justify-self: left;
+    align-self: flex-start;
 }
 .right {
     float: right;
-    padding-right: 0px;
     width: 300px;
 }
 .left {
     float: left;
     width: 500px;
 }
-@media (max-width: 880px) {
+@media (max-width: 900px) {
     .right, left {
         float: none;
-        width: 100vw;
+        width: 290px;
         margin: 5px;
     }
 }
-@media (max-width: 550px) {
+@media (max-width: 900px) {
     #searchbar {
-        width: 90vw;
+        width: 70vw;
     }
 }

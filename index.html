@@ -9,9 +9,9 @@
 </head>
 <body>
     <header>
-        <nav class="top-navbar">
-            <div>Gmail</div>
-            <div>Images</div>
+        <nav class="top-navbar spaced-items nav-link">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
             <div>
                 <img class="nav-images" src="images/google-menu.png"
                 alt="Google Menu" id="menu-icon" 
@@ -33,7 +33,7 @@
                 <input type="search" name="search" id="searchbar" tabindex="0">
             </form>
         </div>
-        <div class="results">
+        <div class="results spaced-items">
             <button tabindex="0" class="google-button"
             onmouseover="hoverOnSearchBttn(this)"
             onmouseout="hoverOffSearchBttn(this)">Google Search</button>
@@ -41,20 +41,19 @@
             onmouseover="hoverOnSearchBttn(this)"
             onmouseout="hoverOffSearchBttn(this)">I'm Feeling Lucky</button>
         </div>
-        <div class="more">
-            <p>
-                Google offered in: 
-                &emsp;&emsp;&emsp;&emsp;<a href="#">አማርኛ</a>
-                &emsp;&emsp;&emsp;&emsp;<a href="#">ትግርኛ</a>
-                &emsp;&emsp;&emsp;&emsp;<a href="#">Soomaali</a>
-                &emsp;&emsp;&emsp;&emsp;<a href="#">Afaan Oromoo</a>
-            </p>
+         
+        <div class="more spaced-items more-link">
+            Google offered in:  
+            <a href="#">አማርኛ</a>
+            <a href="#">ትግርኛ</a>
+            <a href="#">Soomaali</a>
+            <a href="#">Afaan Oromoo</a>
         </div>
     </main>
     <!-- Fixed; Display issue: Footer constructed differently, as evident when browser 
         is fullscreen -->
     <footer>
-        <nav id="location" class="footer">
+        <nav id="location">
             <div>Ethiopia</div>
         </nav>
         <!--nav class="footer">
@@ -66,12 +65,14 @@
             <div>About</div>
             <div>How Search Works</div>
         </nav-->
-        <nav class="footer right">
-            <div>Privacy&emsp;&emsp;&emsp;Terms&emsp;&emsp;&emsp;Settings</div>
+        <nav class="spaced-items right nav-link">
+            <div>Privacy</div>
+            <div>Terms</div>
+            <div>Settings</div>
         </nav>
-        <nav class="footer left">
-            <div>Advertising&emsp;&emsp;&emsp;Business&emsp;&emsp;&emsp;
-                About&emsp;&emsp;&emsp;How Search Works</div>
+        <nav class="spaced-items left nav-link">
+            <div>Advertising</div><div>Business</div><div>
+                About</div><div>How Search Works</div>
         </nav>
     </footer>
     <script src="scripts/main.js"></script>
