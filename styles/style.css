@@ -29,9 +29,9 @@ body {
     align-self: flex-start;
 }
 #menu-icon {
-    width: 15px;
-    height: 15px;
-    padding: 0px;
+    width: 18px;
+    height: 18px;
+    padding: 2px;
 }
 #user-icon {
     width: 30px;
@@ -45,10 +45,13 @@ a:hover {
     text-decoration: underline;
 }
 .nav-link a, .nav-link a:visited {
-    color: gray;
+    color: #888;
+}
+.top-navbar a, .top-navbar a:visited {
+    color: #444;
 }
 .more-link a, .more-link a:visited {
-    color: blue;
+    color: #21a;
 }
 .google-search {
     position: relative;
@@ -81,10 +84,14 @@ a:hover {
     border: 1px solid #eee;
     font-size: 15px;
     padding-left: 45px;
+    padding-right: 45px;
     background-image: url("../images/search-icon-a.png");
     background-size: 15px;
     background-repeat: no-repeat;
     background-position: 15px center;
+}
+#searchbar::content {
+    background-image: url("../images/mic-icon.png");
 }
 #searchbar:hover {
     border-color: transparent;
