@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--mashaAllah-->
 <head>
     <title>Google</title>
     <meta charset="utf-8">
@@ -13,12 +14,12 @@
         <nav class="top-navbar spaced-items nav-link">
             <a href="#">Gmail</a>
             <a href="#">Images</a>
-            <div>
+            <div><a href="#">
                 <img src="images/menu-small.png"
                 alt="Google Menu" id="menu-icon" 
                 onmouseover="hoverOnUserDP(this)" 
                 onmouseout="hoverOffUserDP(this)">
-            </div>
+            </a></div>
             <div>
                 <img id="user-icon" src="images/user-display-photo-a.png" 
                 alt="User Display Picture">
@@ -36,20 +37,20 @@
             </label>
         </div>
         <div class="results spaced-items">
-            <input type="submit" tabindex="0" class="google-button"
-            name="search" onmouseover="hoverOnSearchBttn(this)"
+            <input type="submit" tabindex="0" class="google-button" 
+            onmouseover="hoverOnSearchBttn(this)"
             value="Google Search" onmouseout="hoverOffSearchBttn(this)">
-            <input type="submit" tabindex="0" class="google-button"
-            name="searchbar" onmouseover="hoverOnSearchBttn(this)"
+            <input type="submit" tabindex="0" class="google-button" 
+            onmouseover="hoverOnSearchBttn(this)"
             value="I'm Feeling Lucky" onmouseout="hoverOffSearchBttn(this)">
         </div>
          
         <div class="more spaced-items more-link">
             Google offered in:  
-            <a href="#">አማርኛ</a>
-            <a href="#">ትግርኛ</a>
-            <a href="#">Soomaali</a>
-            <a href="#">Afaan Oromoo</a>
+            <a href="#" onclick="clickMore(this)">አማርኛ</a>
+            <a href="#" onclick="clickMore(this)">ትግርኛ</a>
+            <a href="#" onclick="clickMore(this)">Soomaali</a>
+            <a href="#" onclick="clickMore(this)">Afaan Oromoo</a>
         </div>
     </form>
     <!-- Fixed; Display issue: Footer constructed differently, 

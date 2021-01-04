@@ -51,11 +51,10 @@ a:hover {
     color: blue;
 }
 .google-search {
-    position: absolute;
+    position: relative;
     width: 60vw;
     height: 30vh;
-    left: 15vw;
-    top: 25vh;
+    margin: 25vh auto;
     /* display: flex;
     flex-direction: column;
     justify-content: flex-start;
