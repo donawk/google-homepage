@@ -74,24 +74,16 @@ a:hover {
         ". results results ."
         "more more more more";
 }
-.spaced-text {
-    tab-size: 20;
+.icon {
+    height: 12px;
+    padding: 8px 5px;
 }
 #searchbar {
     width: 600px;
-    height: 45px;
+    height: 25px;
     border-radius: 50px;
     border: 1px solid #eee;
     font-size: 15px;
-    padding-left: 45px;
-    padding-right: 45px;
-    background-image: url("../images/search-icon-a.png");
-    background-size: 15px;
-    background-repeat: no-repeat;
-    background-position: 15px center;
-}
-#searchbar::content {
-    background-image: url("../images/mic-icon.png");
 }
 #searchbar:hover {
     border-color: transparent;
@@ -121,6 +113,35 @@ a:hover {
 }
 .search {
     grid-area: search;
+    display: grid;
+    /* TODO: Turn Search-Bar into a grid to space the text input
+    properly */
+    grid-template-columns: auto 5fr auto;
+    grid-template-rows: 100%;
+    grid-gap: 2px;
+    justify-items: center;
+    align-items: stretch;
+}
+.search div {
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+} 
+#search-icon {
+
+}
+#search-input input, #search-input input:active {
+    border: 0;
+    outline: none;
+    line-height: 20px;
+    margin: 2px 20px 5px 15px;
+}
+#search-input input {
+    width: 100%;
+}
+#inactive-searchbar {
+    width: center;
 }
 .results {
     grid-area: results;
