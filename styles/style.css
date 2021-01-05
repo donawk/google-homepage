@@ -24,7 +24,7 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
-    padding: var(--msize);
+    padding: var(--ssize) var(--msize);
 }
 .top-navbar {
     position: absolute;
@@ -108,7 +108,7 @@ a:hover {
     width: 100%;
     padding: var(--asize);
     margin: 0 var(--asize);
-    line-height: 34px;
+    line-height: var(--bsize);
     font-size: normal;
     border: 0;
     outline: 0;
