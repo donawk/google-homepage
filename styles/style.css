@@ -24,7 +24,7 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
-    padding: var(--ssize) var(--msize);
+    padding: var(--msize);
 }
 .top-navbar {
     position: absolute;
@@ -101,8 +101,22 @@ a:hover {
     padding: var(--asize) var(--asize);
 }
 .icon-b {
-    height: var(--bsize);
+    height: 23px;
+    padding: var(--asize) 2px;
+}
+#search-input, #search-input:active {
+    width: 100%;
     padding: var(--asize);
+    margin: 0 var(--asize);
+    line-height: 34px;
+    font-size: normal;
+    border: 0;
+    outline: 0;
+}
+#active-search {
+    width: var(--zsize);
+    display: none; 
+    padding: var(--ssize);
 }
 .button {
     grid-area: button;
@@ -142,7 +156,7 @@ footer {
     width: 100vw;
     height: auto;
     padding: var(--ssize);
-    padding-left: var(--bsize);
+    padding-left: var(--msize);
     position: left;
     border: 1px solid #e0e2e5;
     align-self: flex-start;
@@ -158,18 +172,15 @@ footer {
 @media (max-width: 750px) {
     .right, left {
         float: none;
-        width: 250px;
-        margin: 2px;
     }
     .right {
         margin-left: 75px;
     }
     footer {
+        justify-content: center;
         align-items: center;
     }
-}
-@media (max-width: 900px) {
-    #searchbar {
-        width: 70vw;
+    .search {
+        width: 61vw;
     }
 }

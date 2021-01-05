@@ -26,27 +26,25 @@
             </div>
         </nav>
     </header>
-    <form action="#" class="search-area">
+    <form action="#" class="search-area" onclick="searchActive()">
         <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" 
         alt="Google Logo" class="logo">
-        <div class="search spaced-items" tab-index="0">
+        <div class="search spaced-items" tab-index="0" id="search-bar">
             <img src="images/search-icon-a.png" alt="Search Icon"
                 class="icon-a">
-            <input type="text">
-            <div id="active-searchbar">
+            <input type="text" id="search-input" name="query">
+            <div id="active-search" class="spaced-items">
                 <img src="images/exit-icon.png" alt="Erase Search" 
-                class="icon-a">
+                class="icon-a" id="erase-search" role="button" >
                 <img src="images/divider-icon.png" alt="" class="icon-b">
             </div>
             <img src="images/mic-icon.png" alt="Audio Input" class="icon-b">
         </div>
         <div class="button spaced-items">
             <input type="submit" tabindex="0" class="search-button" 
-            onmouseover="hoverOnSearchBttn(this)"
-            value="Google Search" onmouseout="hoverOffSearchBttn(this)">
+            value="Google Search" name="query">
             <input type="submit" tabindex="0" class="search-button" 
-            onmouseover="hoverOnSearchBttn(this)"
-            value="I'm Feeling Lucky" onmouseout="hoverOffSearchBttn(this)">
+            value="I'm Feeling Lucky" name="query">
         </div>
         <span class="more spaced-items"> 
             Google offered in:  
