@@ -26,39 +26,35 @@
             </div>
         </nav>
     </header>
-    <form action="#" class="google-search">
-        <div class="logo">
-            <img src="images/google-logo.png" alt="Google Logo">
+    <form action="#" class="search-area">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" 
+        alt="Google Logo" class="logo">
+        <div class="search spaced-items" tab-index="0">
+            <img src="images/search-icon-a.png" alt="Search Icon"
+                class="icon-a">
+            <input type="text">
+            <div id="active-searchbar">
+                <img src="images/exit-icon.png" alt="Erase Search" 
+                class="icon-a">
+                <img src="images/divider-icon.png" alt="" class="icon-b">
+            </div>
+            <img src="images/mic-icon.png" alt="Audio Input" class="icon-b">
         </div>
-        <div class="search spaced-items" id="searchbar" tab-index="0">
-            <div id="search-icon">
-                <img src="images/search-icon-a.png" alt="Search Icon"
-                class="icon">
-            </div>
-            <div id="search-input">
-                <input type="text">
-            </div>
-            <div id="inactive-searchbar">
-                <img src="images/mic-icon.png" alt="Audio Input"
-                class="icon">
-            </div>
-        </div>
-        <div class="results spaced-items">
-            <input type="submit" tabindex="0" class="google-button" 
+        <div class="button spaced-items">
+            <input type="submit" tabindex="0" class="search-button" 
             onmouseover="hoverOnSearchBttn(this)"
             value="Google Search" onmouseout="hoverOffSearchBttn(this)">
-            <input type="submit" tabindex="0" class="google-button" 
+            <input type="submit" tabindex="0" class="search-button" 
             onmouseover="hoverOnSearchBttn(this)"
             value="I'm Feeling Lucky" onmouseout="hoverOffSearchBttn(this)">
         </div>
-         
-        <div class="more spaced-items more-link">
+        <span class="more spaced-items"> 
             Google offered in:  
             <a href="#" onclick="clickMore(this)">አማርኛ</a>
             <a href="#" onclick="clickMore(this)">ትግርኛ</a>
             <a href="#" onclick="clickMore(this)">Soomaali</a>
             <a href="#" onclick="clickMore(this)">Afaan Oromoo</a>
-        </div>
+        </span>
     </form>
     <!-- Fixed; Display issue: Footer constructed differently, 
         as evident when browser is fullscreen -->
